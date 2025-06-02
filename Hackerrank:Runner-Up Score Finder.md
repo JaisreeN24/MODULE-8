@@ -20,8 +20,16 @@ To write a Python program that takes a list of scores from participants and find
 
 ## 💻 PROGRAM:
 
-ADD CODE HERE
-
+    n = int(input())
+    scores = list(map(int, input("Enter scores separated by space: ").split()))
+    
+    unique_scores = list(set(scores)) 
+    unique_scores.sort()  
+    
+    runner_up = unique_scores[-2] 
+    print("Runner-up score is:", runner_up)
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/e9863285-5934-4126-8455-8d00215da569)
 
 ## RESULT
+Thus, the program that takes a list of scores from participants and finds the **runner-up score** (i.e., the second-highest score), eliminating any duplicates is executed and verified successfully.
